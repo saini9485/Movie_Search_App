@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="icon" onclick="home_button()">
+            <i class="fa fa-film" aria-hidden="true"></i> My Movie App
+        </div>
+        <div class="search">
+            <input type="text" class="input-search" onchange="movieSearch()" placeholder="Search ...">
+            <button class="search-button" onclick="movieSearch()"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+        <nav>
+            <button class="cart" onclick="cart_button()">
+                <i class="fa fa-shopping-cart" ></i> Cart<span class="cart-number"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="pagination">
+            <ul id="pagination">
+                <li onclick="page_changing(event)" id="desc">«</li>
+                <li onclick="page_changing(event)" id="1" class="active">1</li>
+                <li onclick="page_changing(event)" id="2">2</li>
+                <li onclick="page_changing(event)" id="3">3</li>
+                <li onclick="page_changing(event)" id="4">4</li>
+                <li onclick="page_changing(event)" id="5">5</li>
+                <li onclick="page_changing(event)" id="6">6</li>
+                <li onclick="page_changing(event)" id="7">7</li>
+                <li onclick="page_changing(event)" id="inc">»</li>
+              </ul> 
+        </div>
+        <div class="footer">
+            @Rajesh Saini 2022
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

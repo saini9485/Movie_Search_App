@@ -1,0 +1,148 @@
+html,*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.singleMovie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.singleMovie h1,h3{
+    width: 95%;
+    margin-left: 10px;
+}
+.singleMovie img {
+    margin-top: 10px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+.input-search {
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    cursor: text;
+    font-size: larger;
+}
+.search-button {
+    height: 40px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body{
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.icon{
+    font-size: xxx-large;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.cart{
+    font-size: xx-large;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+}
+main {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    overflow-y: scroll;
+}
+main .movie {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid black;
+}
+main .movie img {
+    height: 300px;
+    width: 100%;
+}
+
+main .movie h2 {
+ 
+    margin-top: 10px;
+}
+.head-er{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addButton{
+    height: 25px;
+    width: 50px;
+    margin-right: 5px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.oneItemInCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+#pagination {
+    margin: 0;
+    padding: 0;
+    text-align: center
+  }
+  #pagination li {
+    display: inline
+  }
+  #pagination li  {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000
+  }
+  #pagination li  {
+    border-radius: 5px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s
+      
+  }
+  #pagination li.active {
+    background-color: #4caf50;
+    color: #fff
+  }
+  #pagination li:hover:not(.active) {
+    background-color: #ddd;
+  } 
+  
+.footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+}
+.cart-buttons button {
+    height: 20px;
+    width: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+}
