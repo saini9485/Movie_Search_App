@@ -21,10 +21,11 @@ function movie_mapping(data) {
     data.map((oneData) => {
         if (!oneData.count) oneData.count = 1;
         main.innerHTML += `<div class="movie">
-        <img onclick="movieDetail(event)" src="https://image.tmdb.org/t/p/original/${oneData.poster_path}" id=${oneData.id}>
+        <h2 id=${oneData.id} onclick="movieDetail(event)" ><span>Show Name:</span>${oneData.title.substr(0, 15)}</h2>
+        <img class="image" onclick="movieDetail(event)" src="https://image.tmdb.org/t/p/original/${oneData.poster_path}" id=${oneData.id}>
         <div class="head-er">
-            <h2 id=${oneData.id} onclick="movieDetail(event)" >${oneData.title}</h2>
-            <button class="addButton" onclick="add_to_cart(event)" id=${oneData.id}>Add+</button>
+        <h2 id=${oneData.id} onclick="movieDetail(event)" ><span class="pa">Language:</span>${oneData.popularity}</h2>
+            <button class="addButton" onclick="add_to_cart(event)" id=${oneData.id}>Add Movie</button>
         </div>
         </div>`;
     })
