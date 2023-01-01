@@ -21,7 +21,7 @@ function movie_mapping(data) {
     data.map((oneData) => {
         if (!oneData.count) oneData.count = 1;
         main.innerHTML += `<div class="movie">
-        <h2 id=${oneData.id} onclick="movieDetail(event)" ><span>Show Name:</span>${oneData.title.substr(0, 15)}</h2>
+        <h2 id=${oneData.id} onclick="movieDetail(event)" ><span>Show Name:</span>${oneData.title.substr(0, 14)}</h2>
         <img class="image" onclick="movieDetail(event)" src="https://image.tmdb.org/t/p/original/${oneData.poster_path}" id=${oneData.id}>
         <div class="head-er">
         <h2 id=${oneData.id} onclick="movieDetail(event)" ><span class="pa">Language:</span>${oneData.popularity}</h2>

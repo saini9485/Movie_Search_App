@@ -35,6 +35,7 @@ h3 {
   height: 500px;
   width: 500px;
   border: 1px solid black;
+  border-radius: 10px;
 }
 .input-search {
   height: 40px;
