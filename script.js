@@ -24,7 +24,7 @@ function movie_mapping(data) {
         <h2 id=${oneData.id} onclick="movieDetail(event)" ><span>Show Name:</span>${oneData.title.substr(0, 14)}</h2>
         <img class="image" onclick="movieDetail(event)" src="https://image.tmdb.org/t/p/original/${oneData.poster_path}" id=${oneData.id}>
         <div class="head-er">
-        <h2 id=${oneData.id} onclick="movieDetail(event)" ><span class="pa">Language:</span>${oneData.popularity}</h2>
+        <h2 id=${oneData.id} onclick="movieDetail(event)" ><span class="pa">Popularity:</span>${oneData.popularity}</h2>
             <button class="addButton" onclick="add_to_cart(event)" id=${oneData.id}>Add Movie</button>
         </div>
         </div>`;
