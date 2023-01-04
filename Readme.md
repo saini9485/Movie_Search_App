@@ -5,3 +5,4 @@ https://saini9485.github.io/Movie_Search_App/
 <img src="Output1.png" alt="Output1">
 
 <img src="Output2.png" alt="Output2">
+
